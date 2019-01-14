@@ -117,10 +117,26 @@ work if it is not named exactly `LDAV-Symposium.github.io`.
 Once the repository is created, push this year's web page to that
 repository. GitHub provides instructions on how to do this.
 
+### Check links
+
+Once the rotation is complete, go to [ldav.org] and double-check all of the
+web links. When the main page was moved to the archive, the relative
+position of many pages changed, so make sure they are all still active.
+Also, make sure the links of the new page are correct (including links to
+last year's page and all other archive pages).
+
 
 ## Update page
 
-**Create**
+Throughout the year, there will be a need to continually update the main
+page. The web page is easily updated by changing files in the `master`
+branch and pushing them to `GitHub`.
+
+GitHub also provides pull requests, which are a convenient mechanism for
+excepting external contributions. If a collaborator wishes to contribute a
+change to the LDAV web pages, have him or her fork the repository, make a
+local change, and start a pull request.
 
 
 [Jekyll]: https://jekyllrb.com/
+[ldav.org]: http://ldav.org/

@@ -12,6 +12,7 @@ previous year's symposium, the general procedure is as follows.
   2. [Rotate in new page](#rotate-in-new-page)
   3. [Update page](#update-page)
 
+
 ## Create a new web page
 
 To minimize the down time of the LDAV web pages, it is best practice to
@@ -76,9 +77,21 @@ When you run the server, [Jekyll] will build the web pages in the `_site`
 directory and start a lightweight web service that you can connect to with
 your web browser.
 
+
 ## Rotate in new page
 
-**Create**
+Once the new web page is complete, it is time to rotate in the new page by
+moving the existing page to an archive directory and replacing the main
+page.
+
+The first step is to move the existing page to an archive page. To do this,
+go to the [LDAV web GitHub
+page](https://github.com/LDAV-Symposium/LDAV-Symposium.github.io) and click
+on the `Settings` tab.
+
+![GitHub Settings tab](images/main-page-settings-tab.png)
+
+
 
 ## Update page
 

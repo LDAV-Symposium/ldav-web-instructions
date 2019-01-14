@@ -84,6 +84,8 @@ Once the new web page is complete, it is time to rotate in the new page by
 moving the existing page to an archive directory and replacing the main
 page.
 
+### Move existing front page to archive
+
 The first step is to move the existing page to an archive page. To do this,
 go to the [LDAV web GitHub
 page](https://github.com/LDAV-Symposium/LDAV-Symposium.github.io) and click
@@ -91,6 +93,29 @@ on the `Settings` tab.
 
 ![GitHub Settings tab](images/main-page-settings-tab.png)
 
+In the settings, change the `Repository name` to the year the repository
+represents. For example, if the current LDAV page documents the symposium
+for the year 2019, then change the repository name to `2019`.
+
+![Change repository name](images/main-page-change-name.png)
+
+Once the page is renamed, go back to the `Settings` tab. Scroll down to the
+section labeled `GitHub Pages`. The first option for the GitHub pages is
+the `Source`. The `Source` is probably set to `None`. Change it to `Master
+Branch`.
+
+![Enable GitHub pages](images/enable-github-pages.png)
+
+### Create new front page
+
+Once the last front page has been moved out of the way, a new front page
+can be installed. To do this, first create a new repository named
+`LDAV-Symposium.github.io` in the LDAV-Symposium GitHub organization. Note
+that the name of the repository is very important. The web page will not
+work if it is not named exactly `LDAV-Symposium.github.io`.
+
+Once the repository is created, push this year's web page to that
+repository. GitHub provides instructions on how to do this.
 
 
 ## Update page

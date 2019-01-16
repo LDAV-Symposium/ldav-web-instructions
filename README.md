@@ -138,5 +138,31 @@ change to the LDAV web pages, have him or her fork the repository, make a
 local change, and start a pull request.
 
 
+## Contacts
+
+Here is a list of some contacts for some administrative access to various
+parts of the LDAV web page maintenance. Note that as roles change, it is
+possible that some of these contacts can become out of date.
+
+##### GitHub Projects
+
+You can contact [Kenneth Moreland] or [Christoph Garth] for help with the
+[LDAV-Symposium] "organization" on GitHub, under which all LDAV web page
+respositories are hosted. They can help add members to the organization,
+add new projects, and modify access.
+
+##### DNS Hosting
+
+DNS hosting is managed by the University of Utah's SCI institute. [Nathan
+Galli] is the contact there for making changes to how DNS redirects
+ldav.org to where the pages are hosted.
+
+
+[Christoph Garth]: mailto:garth@cs.uni-kl.de
+[Kenneth Moreland]: mailto:kmorel@sandia.gov
+[Nathan Galli]: mailto:nathang@sci.utah.edu
+
+
 [Jekyll]: https://jekyllrb.com/
 [ldav.org]: http://ldav.org/
+[LDAV-Symposium]: https://github.com/LDAV-Symposium

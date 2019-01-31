@@ -31,6 +31,12 @@ Also, when creating a new web page, do not worry about including the web
 content from previous years. Again, this content will be archived [when we
 rotate in the new page](#rotate-in-new-page).
 
+### CNAME file
+
+When you create the pages, make sure you have a file named `CNAME` that has
+the contents of `ldav.org`. This will be important later to make sure that
+the ldav.org domain points to the page when we set that up later.
+
 ### A brief primer to Jekyll
 
 Many of the LDAV web pages were created with the [Jekyll] web page builder
@@ -127,12 +133,21 @@ Once the repository is created, push this year's web page to that
 repository. GitHub provides instructions on how to do this.
 
 With the new web pages installed in the `LDAV-Symposium.github.io`
-repository, you need to set the custom domain to be `ldav.org`. Go to the
-GitHub repository and once again click on the `Settings` tab. Scroll down
-again to the section labeled `GitHub Pages` and change the `Custom domain`
-field to `ldav.org`.
+repository, you need to set the custom domain to be `ldav.org`. For this to
+work, you need both a `CNAME` file and the custom domain set up.
+
+First, double check that you have a file in your repository named `CNAME`.
+This file should contain the string `ldav.org` (and nothing else). The page
+will not show up properly if you do not have it.
+
+Second, go to the GitHub repository and once again click on the `Settings`
+tab. Scroll down again to the section labeled `GitHub Pages` and change the
+`Custom domain` field to `ldav.org`.
 
 ![Set custom domain](images/set-custom-domain.png)
+
+At this point, your new web page should be accessible from
+[http://ldav.org].
 
 ### Check links
 

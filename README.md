@@ -106,6 +106,15 @@ Branch`.
 
 ![Enable GitHub pages](images/enable-github-pages.png)
 
+Althought the repository is moved, it is still grabbing the custom web
+domain. That needs to be removed so this page can be a subpage of the new
+web page to be installed. To do that scroll down on the `Settings` page
+back to the `GitHub Pages` section. Lower in that section there is a
+`Custom domain` field that is currently set to `ldav.org`. Change that to
+be blank and hit the `Save` button.
+
+![Remove custom domain](images/remove-custom-domain.png)
+
 ### Create new front page
 
 Once the last front page has been moved out of the way, a new front page
@@ -116,6 +125,14 @@ work if it is not named exactly `LDAV-Symposium.github.io`.
 
 Once the repository is created, push this year's web page to that
 repository. GitHub provides instructions on how to do this.
+
+With the new web pages installed in the `LDAV-Symposium.github.io`
+repository, you need to set the custom domain to be `ldav.org`. Go to the
+GitHub repository and once again click on the `Settings` tab. Scroll down
+again to the section labeled `GitHub Pages` and change the `Custom domain`
+field to `ldav.org`.
+
+![Set custom domain](images/set-custom-domain.png)
 
 ### Check links
 

@@ -9,8 +9,9 @@ Starting with the initial preparations for LDAV, beginning soon after the
 previous year's symposium, the general procedure is as follows.
 
   1. [Create a new web page](#create-a-new-web-page)
-  2. [Rotate in new page](#rotate-in-new-page)
-  3. [Update page](#update-page)
+  2. [Make new page live](#make-new-page-live)
+  3. [Rotate in new page](#rotate-in-new-page)
+  4. [Update page](#update-page)
 
 
 ## Create a new web page
@@ -24,18 +25,10 @@ You are free to create the web page in whatever way you like, but using a
 previous year's web page is probably the easiest way to start. Do not worry
 about preserving the git history of the previous year. In fact, it is
 better to start with a fresh git repository to save space. The git history
-of previous web pages will be saved [when we rotate out the old
-page](#rotate-in-new-page).
+of previous web pages are permanent links.
 
 Also, when creating a new web page, do not worry about including the web
-content from previous years. Again, this content will be archived [when we
-rotate in the new page](#rotate-in-new-page).
-
-### CNAME file
-
-When you create the pages, make sure you have a file named `CNAME` that has
-the contents of `ldav.org`. This will be important later to make sure that
-the ldav.org domain points to the page when we set that up later.
+content from previous years. Again, this content will is archived.
 
 ### A brief primer to Jekyll
 
@@ -84,70 +77,41 @@ directory and start a lightweight web service that you can connect to with
 your web browser.
 
 
-## Rotate in new page
+## Make new page live
 
-Once the new web page is complete, it is time to rotate in the new page by
-moving the existing page to an archive directory and replacing the main
-page.
+When the new page works, it can be posted to GitHub pages. To do this,
+first go to GitHub and create a new repository under the [LDAV-Symposium]
+organization. The repository should be named as the 4 digit year the pages
+are for. Push the local repository to GitHub.
 
-### Move existing front page to archive
-
-The first step is to move the existing page to an archive page. To do this,
-go to the [LDAV web GitHub
-page](https://github.com/LDAV-Symposium/LDAV-Symposium.github.io) and click
-on the `Settings` tab.
+Once the files are pushed to GitHub, the GitHub pages should be enabled. Go
+to the GitLab repo and click on the `Settings` tab.
 
 ![GitHub Settings tab](images/main-page-settings-tab.png)
 
-In the settings, change the `Repository name` to the year the repository
-represents. For example, if the current LDAV page documents the symposium
-for the year 2019, then change the repository name to `2019`.
-
-![Change repository name](images/main-page-change-name.png)
-
-Once the page is renamed, go back to the `Settings` tab. Scroll down to the
-section labeled `GitHub Pages`. The first option for the GitHub pages is
-the `Source`. The `Source` is probably set to `None`. Change it to `Master
-Branch`.
+Scroll down to the section labeled `GitHub Pages`. The first option for the
+GitHub pages is the `Source`. The `Source` is probably set to `None`.
+Change it to `Master Branch`.
 
 ![Enable GitHub pages](images/enable-github-pages.png)
 
-Althought the repository is moved, it is still grabbing the custom web
-domain. That needs to be removed so this page can be a subpage of the new
-web page to be installed. To do that scroll down on the `Settings` page
-back to the `GitHub Pages` section. Lower in that section there is a
-`Custom domain` field that is currently set to `ldav.org`. Change that to
-be blank and hit the `Save` button.
+Once the settings page reloads, it should let you know that the web pages
+are posted at a site with a name like `https://ldav.org/20XX`, which is
+where the new pages will be available under the `ldav.org` domain.
 
-![Remove custom domain](images/remove-custom-domain.png)
+![GitHub pages link](images/github-pages-link.png)
 
-### Create new front page
 
-Once the last front page has been moved out of the way, a new front page
-can be installed. To do this, first create a new repository named
-`LDAV-Symposium.github.io` in the LDAV-Symposium GitHub organization. Note
-that the name of the repository is very important. The web page will not
-work if it is not named exactly `LDAV-Symposium.github.io`.
+## Rotate in new page
 
-Once the repository is created, push this year's web page to that
-repository. GitHub provides instructions on how to do this.
+Once the new web page is complete, it is time to rotate in the new page by
+changing the redirect to the new page. The redirection is done by the
+`index.html` file in the [LDAV-Symposium.github.io] repository. Simply
+change the 2 URL references (one in a `meta` tag and one in a `link` tag)
+to the new repository.
 
-With the new web pages installed in the `LDAV-Symposium.github.io`
-repository, you need to set the custom domain to be `ldav.org`. For this to
-work, you need both a `CNAME` file and the custom domain set up.
-
-First, double check that you have a file in your repository named `CNAME`.
-This file should contain the string `ldav.org` (and nothing else). The page
-will not show up properly if you do not have it.
-
-Second, go to the GitHub repository and once again click on the `Settings`
-tab. Scroll down again to the section labeled `GitHub Pages` and change the
-`Custom domain` field to `ldav.org`.
-
-![Set custom domain](images/set-custom-domain.png)
-
-At this point, your new web page should be accessible from
-[http://ldav.org].
+Once the changes are pushed to GitHub (and GitHub has some time to
+rebuild), [https://ldav.org] should be redirected to the new pages.
 
 ### Check links
 
@@ -198,3 +162,4 @@ ldav.org to where the pages are hosted.
 [Jekyll]: https://jekyllrb.com/
 [ldav.org]: http://ldav.org/
 [LDAV-Symposium]: https://github.com/LDAV-Symposium
+[LDAV-Symposium.github.io]: https://github.com/LDAV-Symposium/LDAV-Symposium.github.io

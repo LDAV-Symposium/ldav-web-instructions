@@ -111,15 +111,7 @@ change the 2 URL references (one in a `meta` tag and one in a `link` tag)
 to the new repository.
 
 Once the changes are pushed to GitHub (and GitHub has some time to
-rebuild), [https://ldav.org] should be redirected to the new pages.
-
-### Check links
-
-Once the rotation is complete, go to [ldav.org] and double-check all of the
-web links. When the main page was moved to the archive, the relative
-position of many pages changed, so make sure they are all still active.
-Also, make sure the links of the new page are correct (including links to
-last year's page and all other archive pages).
+rebuild), https://ldav.org should be redirected to the new pages.
 
 
 ## Update page

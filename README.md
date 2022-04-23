@@ -93,13 +93,13 @@ In the `Code and automation` section of the sidebar, click `Pages`. The first op
 GitHub pages is the `Source`. The `Source` is probably set to `None`.
 Change it to `Master Branch`.
 
-![Enable GitHub pages](images/enable-github-pages-2.png)
+![Enable GitHub pages](images/enable-github-pages.png)
 
 Select `Enforce HTTPS` if it is not checked. Once the settings page reloads, it should let you know that the web pages
 are posted at a site with a name like `https://ldav.org/20XX`, which is
 where the new pages will be available under the `ldav.org` domain.
 
-![GitHub pages link](images/github-pages-link-2.png)
+![GitHub pages link](images/github-pages-link.png)
 
 
 ## Rotate in new page
